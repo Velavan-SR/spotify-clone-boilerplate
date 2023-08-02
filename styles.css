@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
+
+*{
+    font-family: 'DM Sans' , sans-serif;
+    margin-top: 0;
+}
+
+#left{
+    margin-right: 80%;
+    margin-left: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#right{
+    background-color: rgb(60, 59, 59);
+}
+
+p{
+    color: white;
+}
+
+.first-3,.second-3,.final-6,.install{
+    font-weight:bolder;
+}
+.app-logo{
+    margin:0 0;
+    border:0px 0px;
+    border: 1px solid red;
+    padding:0%;
+}
+
+#liked-songs{
+    position: fixed;
+}
+
+#heart{
+    position: relative;
+    right: 60px;
+    bottom: 25px;
+}
+
+section{
+    display: flex;
+}
