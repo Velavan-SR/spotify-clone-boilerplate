@@ -23,6 +23,8 @@ body{
 }
 
 .account{
+    height: 60px;
+    width: 160px;
     position: absolute;
     right: 0;
 }
@@ -37,33 +39,55 @@ h1{
 
 .first-3,.second-3,.final-6,.install{
     font-weight:bolder;
+    margin: 15px;
+}
+
+.first-3,.second-3,.install{
+    display: flex;
+    justify-content:baseline;
+    text-align:left;
 }
 .app-logo{
-    margin:0 0;
-    border:0px 0px;
-    border: 1px solid red;
+    height: 55px;
+    width: 5cm;
+    margin: 30px;
     padding:0%;
 }
 
-.liked-songs{
-    position: fixed;
+.logos{
+    height: 30px;
+    width: 30px;
 }
 
-.heart{
+.liked-songs{
+    position: absolute;
+}
+
+.heart2{
     position: relative;
     right: 60px;
-    bottom: 25px;
+    top: 30px;
+    height: fit-content;
 }
 
-section{
+.heart1{
+    position:relative;
+    right: 21px;
+    top: 7px;
+    height: 15px;
+    width: 15px;
+}
+
+section,.install{
     display: flex;
     justify-content:baseline;
     align-content:flex-start;
 }
 
 .rectangle{
+    display: flex;
     height:fit-content;
-    width: 6cm;
+    width:5cm;
     border: 2px;
     border-collapse: separate;
     background-color: rgb(55, 53, 53);
@@ -71,6 +95,11 @@ section{
 
 .recommended-playlists{
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-content:space-around;
+}
+
+.top-arrow{
+    height: 50px;
+    width: 120px;
 }
