@@ -103,3 +103,46 @@ section,.install{
     height: 50px;
     width: 120px;
 }
+
+@media screen and (max-width: 800px) {
+
+    .recommended-playlists{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 7px;
+        margin-bottom: 30px;
+    }
+
+    .rectangle{
+        display: flex;
+        width: 28vw;
+    }
+
+    #left{
+        width:35vw
+    }
+
+    img{
+        height: 7vh;
+        width: 15vw;
+    }
+
+    .app-logo{
+        height: 6vh;
+        width: 20vw;
+    }
+
+    .logos{
+        height: 4vh;
+        width: 6vw;
+    }
+
+    p{
+        font-size: small;
+        padding-left: 5%;
+    }
+
+    .heart2{
+        transform: translate(60%,-50%);
+    }
+}
