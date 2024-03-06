@@ -17,7 +17,6 @@ body{
 
 #right{
     width:fit-content;
-    margin-right: 100%;
     margin-top: 0;
     
 }
@@ -107,24 +106,32 @@ section,.install{
 @media screen and (max-width: 800px) {
 
     .recommended-playlists{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 7px;
-        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .rectangle{
         display: flex;
-        width: 28vw;
+        height: 80px;
+        width: 100px;
+        background-color: inherit;
     }
 
     #left{
-        width:35vw
+        width:35vw;
+        height: 100vh;
     }
 
     img{
         height: 7vh;
         width: 15vw;
+    }
+
+    .rectangle img{
+        height: 45px;
+        width: 45px;
     }
 
     .app-logo{
@@ -143,6 +150,10 @@ section,.install{
     }
 
     .heart2{
-        transform: translate(60%,-50%);
+        display: none;
+    }
+
+    .top-arrow,.account{
+        display: none;
     }
 }
