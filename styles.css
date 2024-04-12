@@ -7,18 +7,20 @@
 
 body{
     background-color: rgb(30, 29, 29);
+    margin: 0;
 }
 
 #left{
     margin-left: 80%;
     margin-left: 0;
     background-color: rgb(0, 0, 0);
-    height: 100%;
+    height: 100vh;
 }
 
 #right{
     width:fit-content;
-    margin-top: 0;
+    margin-top: 5vh;
+    margin-left: 3vw;
 }
 
 .account{
@@ -43,8 +45,10 @@ h1{
 
 .first-3,.second-3,.install{
     display: flex;
-    justify-content:baseline;
-    text-align:left;
+    justify-content:space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
 }
 .app-logo{
     height: 55px;
@@ -77,7 +81,7 @@ h1{
     width: 15px;
 }
 
-section,.install{
+body{
     display: flex;
     justify-content:baseline;
     align-content:flex-start;
@@ -85,17 +89,22 @@ section,.install{
 
 .rectangle{
     display: flex;
-    height:fit-content;
-    width:5cm;
-    border: 2px;
-    border-collapse: separate;
+    height:80px;
+    width: 200px;
+    align-items: center;
+    /* justify-content: space-between; */
     background-color: rgb(55, 53, 53);
+}
+
+.rectangle img{
+    height: 80px;
 }
 
 .recommended-playlists{
     display: flex;
-    justify-content:space-evenly;
-    align-content:space-around;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
 }
 
 .top-arrow{
@@ -103,11 +112,17 @@ section,.install{
     width: 120px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
-    .recommended-playlists{
+    body{
         display: flex;
         flex-direction: column;
+        margin: 0;
+    }
+
+    .recommended-playlists{
+        display: grid;
+        grid-template-columns: 100px 100px;
         justify-content: space-around;
         align-items: center;
     }
@@ -120,8 +135,13 @@ section,.install{
     }
 
     #left{
-        width:35vw;
-        height: 100vh;
+        width:100vw;
+        height: 10vh;
+    }
+
+    #right{
+        margin-top: 0;
+        margin-left: 0;
     }
 
     img{
@@ -137,6 +157,9 @@ section,.install{
     .app-logo{
         height: 6vh;
         width: 20vw;
+        margin: 0;
+        margin-top: 2vh;
+        margin-left: 2vw;
     }
 
     .logos{
@@ -149,11 +172,7 @@ section,.install{
         padding-left: 5%;
     }
 
-    .heart2{
-        display: none;
-    }
-
-    .top-arrow,.account{
+    .heart2,.top-arrow,.account,.install,.first-3,.second-3,.final-6{
         display: none;
     }
 }
