@@ -112,6 +112,10 @@ body{
     width: 120px;
 }
 
+#right h1{
+    padding-top: 25px;
+}
+
 @media screen and (max-width: 900px) {
 
     body{
@@ -137,11 +141,19 @@ body{
     #left{
         width:100vw;
         height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #right{
         margin-top: 0;
         margin-left: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     img{
@@ -155,8 +167,8 @@ body{
     }
 
     .app-logo{
-        height: 6vh;
-        width: 20vw;
+        height: 46px;
+        width: 100px;
         margin: 0;
         margin-top: 2vh;
         margin-left: 2vw;
